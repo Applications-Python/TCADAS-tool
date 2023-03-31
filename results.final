@@ -1,0 +1,468 @@
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Tunnelox=89.9426 angstroms (0.00899426 um)  X.val=0.2375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Thickness of Floating_Gate=50 angstroms (0.005 um)  X.val=0.2375
+
+Oxide1=20 angstroms (0.002 um)  X.val=0.222
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Nitride=110 angstroms (0.011 um)  X.val=0.2375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Oxide2=20 angstroms (0.002 um)  X.val=0.2375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Thickness of Control Gate=800 angstroms (0.08 um)  X.val=0.2375
+
+Length of Floating_Gate=609.922 angstroms (0.0609922 um)  Y.val=-0.476
+
+Length of Control Gate=610 angstroms (0.061 um)  Y.val=-0.54
+
+initial vt=-0.283875 
+
+Ion=4.08837e-007 
+
+Ioff=8.57215e-009 
+
+Ratio Ion/Ioff=47.6936 
+
+Static Power=8.57215e-009 
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Tunnelox=89.9426 angstroms (0.00899426 um)  X.val=0.2375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Thickness of Floating_Gate=50 angstroms (0.005 um)  X.val=0.2375
+
+Oxide1=20 angstroms (0.002 um)  X.val=0.222
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Nitride=110 angstroms (0.011 um)  X.val=0.2375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Oxide2=20 angstroms (0.002 um)  X.val=0.2375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Thickness of Control Gate=800 angstroms (0.08 um)  X.val=0.2375
+
+Length of Floating_Gate=609.922 angstroms (0.0609922 um)  Y.val=-0.476
+
+Length of Control Gate=610 angstroms (0.061 um)  Y.val=-0.54
+
+initial vt=-0.283875 
+
+Ion=4.08837e-007 
+
+Ioff=8.57215e-009 
+
+Ratio Ion/Ioff=47.6936 
+
+Static Power=8.57215e-009 
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Tunnelox=89.9426 angstroms (0.00899426 um)  X.val=0.2375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Thickness of Floating_Gate=50 angstroms (0.005 um)  X.val=0.2375
+
+Oxide1=20 angstroms (0.002 um)  X.val=0.222
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Nitride=110 angstroms (0.011 um)  X.val=0.2375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Oxide2=20 angstroms (0.002 um)  X.val=0.2375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Thickness of Control Gate=800 angstroms (0.08 um)  X.val=0.2375
+
+Length of Floating_Gate=609.922 angstroms (0.0609922 um)  Y.val=-0.476
+
+Length of Control Gate=610 angstroms (0.061 um)  Y.val=-0.54
+
+initial vt=-0.283875 
+
+Ion=4.08837e-007 
+
+Ioff=8.57215e-009 
+
+Ratio Ion/Ioff=47.6936 
+
+Static Power=8.57215e-009 
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Tunnelox=89.9432 angstroms (0.00899432 um)  X.val=0.2375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Thickness of Floating_Gate=50 angstroms (0.005 um)  X.val=0.2375
+
+Oxide1=20 angstroms (0.002 um)  X.val=0.222
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Nitride=110 angstroms (0.011 um)  X.val=0.2375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Oxide2=20 angstroms (0.002 um)  X.val=0.2375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Thickness of Control Gate=800 angstroms (0.08 um)  X.val=0.2375
+
+Length of Floating_Gate=609.923 angstroms (0.0609923 um)  Y.val=-0.476
+
+Length of Control Gate=610 angstroms (0.061 um)  Y.val=-0.54
+
+initial vt=0.0077216 
+
+Ion=2.64859e-007 
+
+Ioff=9.03011e-010 
+
+Ratio Ion/Ioff=293.307 
+
+Static Power=9.03011e-010 
+
+final vt=3.23033 
+
+vt shift=3.22261 
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Tunnelox=89.9426 angstroms (0.00899426 um)  X.val=0.2375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Thickness of Floating_Gate=50 angstroms (0.005 um)  X.val=0.2375
+
+Oxide1=20 angstroms (0.002 um)  X.val=0.222
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Nitride=110 angstroms (0.011 um)  X.val=0.2375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Tunnelox=89.9432 angstroms (0.00899432 um)  X.val=0.2375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Thickness of Floating_Gate=50 angstroms (0.005 um)  X.val=0.2375
+
+Oxide1=20 angstroms (0.002 um)  X.val=0.222
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Nitride=110 angstroms (0.011 um)  X.val=0.2375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Oxide2=20 angstroms (0.002 um)  X.val=0.2375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Thickness of Control Gate=800 angstroms (0.08 um)  X.val=0.2375
+
+Length of Floating_Gate=609.923 angstroms (0.0609923 um)  Y.val=-0.476
+
+Length of Control Gate=610 angstroms (0.061 um)  Y.val=-0.54
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Tunnelox=89.9432 angstroms (0.00899432 um)  X.val=0.2375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Thickness of Floating_Gate=50 angstroms (0.005 um)  X.val=0.2375
+
+Oxide1=20 angstroms (0.002 um)  X.val=0.222
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Nitride=110 angstroms (0.011 um)  X.val=0.2375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Oxide2=20 angstroms (0.002 um)  X.val=0.2375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Thickness of Control Gate=800 angstroms (0.08 um)  X.val=0.2375
+
+Length of Floating_Gate=609.923 angstroms (0.0609923 um)  Y.val=-0.476
+
+Length of Control Gate=610 angstroms (0.061 um)  Y.val=-0.54
+
+initial vt=-0.0894452 
+
+Ion=4.61354e-007 
+
+Ioff=4.45432e-010 
+
+Ratio Ion/Ioff=1035.75 
+
+Static Power=4.45432e-010 
+
+final vt=1.26317 
+
+vt shift=1.35262 
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Tunnelox=89.9432 angstroms (0.00899432 um)  X.val=0.2375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Thickness of Floating_Gate=50 angstroms (0.005 um)  X.val=0.2375
+
+Oxide1=20 angstroms (0.002 um)  X.val=0.222
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Nitride=110 angstroms (0.011 um)  X.val=0.2375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Oxide2=20 angstroms (0.002 um)  X.val=0.2375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Thickness of Control Gate=800 angstroms (0.08 um)  X.val=0.2375
+
+Length of Floating_Gate=609.923 angstroms (0.0609923 um)  Y.val=-0.476
+
+Length of Control Gate=610 angstroms (0.061 um)  Y.val=-0.54
+
+initial vt=-0.208187 
+
+Ion=2.05846e-007 
+
+Ioff=3.10614e-009 
+
+Ratio Ion/Ioff=66.2707 
+
+Static Power=3.10614e-009 
+
+final vt=5.39828 
+
+vt shift=5.60647 
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Tunnelox=89.9432 angstroms (0.00899432 um)  X.val=0.2375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Thickness of Floating_Gate=50 angstroms (0.005 um)  X.val=0.2375
+
+Oxide1=20 angstroms (0.002 um)  X.val=0.222
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Nitride=110 angstroms (0.011 um)  X.val=0.2375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Oxide2=20 angstroms (0.002 um)  X.val=0.2375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Thickness of Control Gate=800 angstroms (0.08 um)  X.val=0.2375
+
+Length of Floating_Gate=609.923 angstroms (0.0609923 um)  Y.val=-0.476
+
+Length of Control Gate=610 angstroms (0.061 um)  Y.val=-0.54
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Tunnelox=89.9432 angstroms (0.00899432 um)  X.val=0.2375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Thickness of Floating_Gate=50 angstroms (0.005 um)  X.val=0.2375
+
+Oxide1=20 angstroms (0.002 um)  X.val=0.222
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Nitride=110 angstroms (0.011 um)  X.val=0.2375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Oxide2=20 angstroms (0.002 um)  X.val=0.2375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Thickness of Control Gate=800 angstroms (0.08 um)  X.val=0.2375
+
+Length of Floating_Gate=609.923 angstroms (0.0609923 um)  Y.val=-0.476
+
+Length of Control Gate=610 angstroms (0.061 um)  Y.val=-0.54
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Tunnelox=89.9432 angstroms (0.00899432 um)  X.val=0.2375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Thickness of Floating_Gate=50 angstroms (0.005 um)  X.val=0.2375
+
+Oxide1=20 angstroms (0.002 um)  X.val=0.222
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Nitride=110 angstroms (0.011 um)  X.val=0.2375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Oxide2=20 angstroms (0.002 um)  X.val=0.2375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Thickness of Control Gate=800 angstroms (0.08 um)  X.val=0.2375
+
+Length of Floating_Gate=609.923 angstroms (0.0609923 um)  Y.val=-0.476
+
+Length of Control Gate=610 angstroms (0.061 um)  Y.val=-0.54
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Tunnelox=89.9432 angstroms (0.00899432 um)  X.val=0.2375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Thickness of Floating_Gate=50 angstroms (0.005 um)  X.val=0.2375
+
+Oxide1=20 angstroms (0.002 um)  X.val=0.222
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Nitride=110 angstroms (0.011 um)  X.val=0.2375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Oxide2=20 angstroms (0.002 um)  X.val=0.2375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Thickness of Control Gate=800 angstroms (0.08 um)  X.val=0.2375
+
+Length of Floating_Gate=609.923 angstroms (0.0609923 um)  Y.val=-0.476
+
+Length of Control Gate=610 angstroms (0.061 um)  Y.val=-0.54
+
+initial vt=-0.23517 
+
+Ion=2.88067e-007 
+
+Ioff=5.08367e-009 
+
+Ratio Ion/Ioff=56.6652 
+
+Static Power=5.08367e-009 
+
+final vt=3.42947 
+
+vt shift=3.66464 
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Tunnelox=89.9432 angstroms (0.00899432 um)  X.val=0.2375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Thickness of Floating_Gate=50 angstroms (0.005 um)  X.val=0.2375
+
+Oxide1=20 angstroms (0.002 um)  X.val=0.222
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Nitride=110 angstroms (0.011 um)  X.val=0.2375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Oxide2=20 angstroms (0.002 um)  X.val=0.2375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Thickness of Control Gate=800 angstroms (0.08 um)  X.val=0.2375
+
+Length of Floating_Gate=609.923 angstroms (0.0609923 um)  Y.val=-0.476
+
+Length of Control Gate=610 angstroms (0.061 um)  Y.val=-0.54
+
+initial vt=-0.109275 
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Tunnelox=89.9432 angstroms (0.00899432 um)  X.val=0.2375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Thickness of Floating_Gate=50 angstroms (0.005 um)  X.val=0.2375
+
+Oxide1=20 angstroms (0.002 um)  X.val=0.222
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Nitride=110 angstroms (0.011 um)  X.val=0.2375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Oxide2=20 angstroms (0.002 um)  X.val=0.2375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Thickness of Control Gate=800 angstroms (0.08 um)  X.val=0.2375
+
+Length of Floating_Gate=609.923 angstroms (0.0609923 um)  Y.val=-0.476
+
+Length of Control Gate=610 angstroms (0.061 um)  Y.val=-0.54
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Tunnelox=89.9432 angstroms (0.00899432 um)  X.val=0.2375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Thickness of Floating_Gate=50 angstroms (0.005 um)  X.val=0.2375
+
+Oxide1=20 angstroms (0.002 um)  X.val=0.222
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Nitride=110 angstroms (0.011 um)  X.val=0.2375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Oxide2=20 angstroms (0.002 um)  X.val=0.2375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.25)
+defaulting to right hand side @ x=0.2375
+Thickness of Control Gate=800 angstroms (0.08 um)  X.val=0.2375
+
+Length of Floating_Gate=609.923 angstroms (0.0609923 um)  Y.val=-0.476
+
+Length of Control Gate=610 angstroms (0.061 um)  Y.val=-0.54
+
+initial vt=-0.109275 
+

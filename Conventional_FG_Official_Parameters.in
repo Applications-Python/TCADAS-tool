@@ -1,0 +1,444 @@
+  go athena
+# define mesh for calculation
+line x loc=0.0         spacing=0.03
+line x loc=0.001         spacing=0.03
+line x loc=0.005         spacing=0.013
+line x loc=0.01         spacing=0.035
+line x loc=0.04         spacing=0.035
+line x loc=0.06         spacing=0.035
+line x loc=0.08         spacing=0.05
+line x loc=0.12         spacing=0.01 
+line x loc=0.2         spacing=0.0005
+line x loc=0.25        spacing=0.0005 
+#
+line y loc=0.0         spacing=0.01
+line y loc=0.07        spacing=0.01 
+line y loc=0.1         spacing=0.01
+line y loc=0.12        spacing=0.01  
+line y loc=0.3         spacing=0.02 
+line y loc=0.5         spacing=0.06
+line y loc=1.0         spacing=0.35
+# denotes the type of wafer on which the floating gate will be constructed
+init silicon orientation=100 c.boron=1e14 space.mul=2 TWO.D
+structure outfile=b1wafer.str
+#tonyplot b1wafer.str
+##############################################################
+# epitaxial layer to create n-type
+epitaxy time = 45 temp = 900 t.final = 1000 c.arsenic=1e16 thickness = .5 \
+divisions = 20 dy =0.05 ydy = 0.00
+#extract the design parameter
+
+structure outfile=b2wafer1.str
+#tonyplot b2wafer1.str
+###############################################################
+# p-well implant - this step create the p-type well for npn floating gate
+implant boron dose=8e12 energy=100 pears
+diffus time=950 temp=100 weto2 hcl.pc=3
+# This step further diffus the p-well into the device
+diffus time=50 temp=1000 t.rate=4.000 dryo2 press=0.10 hcl=3
+diffus time=220 temp=1200 nitro press=1
+diffus time=90 temp=1200 t.rate=-4.444 nitro press=1
+etch oxide all
+#sacrificial "cleaning" oxide 
+diffus time=20 temp=1000 dryo2 press=1 hcl=3
+etch oxide all
+structure outfile=b3pwell.str
+#tonyplot b3pwell.str
+#################################################################
+####################  LOCOS here   ######################
+###################################################################
+deposit oxide thick=0.001 div=1
+deposit nitride thick=.03 div=6
+deposit barrier thick=0.01 div=1
+etch barrier left p1.x=0.01
+etch nitride thick=.035
+etch oxide thick=0.001
+etch silicon dry thick=0.035
+##### removed the barrier, wafer is annealed in wafer vapor invironment so 
+# that rapid oxide con be achieved
+strip
+method grid.ox=0.1
+diffuse temp=1200 time=5 weto2 hcl.pc=3
+etching all remain
+etch nitride all
+etch oxide thick=0.05
+structure outfile=b4locos.str
+#tonyplot b4locos.str
+#####################################################################
+#the gate oxide is now grown, the time and the temperature is chosen to
+# create a gate oxide of 0.03nm
+diffus time=10 temp=921 dryo2 press=1.00 hcl=3
+extract name="Tunnelox" thickness oxide mat.occno=1 x.val=0.8
+structure outfile=b5oxide.str
+#tonyplot b5oxide.str
+#################################################################
+#Next step is to concentrate flow through channel by implanting boron,
+#it helps reduce the leakage current
+implant boron dose=9e12 energy=100 pearson
+structure outfile=b6dope.str
+#tonyplot b6dope.str
+#################################################################
+#############################################################################
+#deposit poly to create floating gate
+deposit poly thick=0.005 div=10
+extract name="Thickness of Floating_Gate" thickness material="Polysilicon" mat.occno=1 x.val=0.8
+#The poly is doped with phosphor to assist its conductance
+implant phos dose=4e10 energy=100 pearson
+structure outfile=b7polyfgate.str
+#tonyplot b7polyfgate.str
+#################################################################
+
+
+structure outfile=b8oxide1.str
+#tonyplot b8oxide1.str
+###############################################################
+# deposit polisilicon to create control  gate
+
+#depo poly thick=0.075 div=10
+
+# The polisilicon is doped with phosphor to assist its conductance
+
+#implant phosphor dose=1e14 energy=30 pearson
+###############################################################
+#Cut all layers to create fgate and cgate
+#etch oxide start x=0.2435 y=-0.7
+#etch cont x=0.2435 y=-0.4
+#etch cont x=0.2405 y=-0.4
+#etch done x=0.2405 y=-0.7
+
+
+#etch oxide start x=0.2355 y=-0.7
+#etch cont x=0.2355 y=-0.4
+#etch cont x=0.2325 y=-0.4
+#etch done x=0.2325 y=-0.7
+
+#etch oxide start x=0.2275 y=-0.7
+#etch cont x=0.2275 y=-0.4
+#etch cont x=0.2245 y=-0.4
+#etch done x=0.2245 y=-0.7
+
+
+#etch polysilicon start x=0.2435 y=-0.7
+#etch cont x=0.2435 y=-0.4
+#etch cont x=0.2405 y=-0.4
+#etch done x=0.2405 y=-0.7
+
+
+
+#etch polysilicon start x=0.2355 y=-0.7
+#etch cont x=0.2355 y=-0.4
+#etch cont x=0.2325 y=-0.4
+#etch done x=0.2325 y=-0.7
+
+
+
+
+#etch polysilicon start x=0.2275 y=-0.7
+#etch cont x=0.2275 y=-0.4
+#etch cont x=0.2245 y=-0.4
+#etch done x=0.2245 y=-0.7
+
+#etch oxide right p1.x=0.2485
+#etch poly right p1.x=0.2485
+
+
+
+
+structure outfile=b9cut.str
+#tonyplot b9cut.str
+
+#etch poly left p1.x=0.71
+
+
+#last oxide with method fermi compress
+#method fermi compress
+#diffus time=3 temp=900 weto2 press=1.0
+#depo oxide thick=0.001 div=20
+#etch oxide dry thick=0.018
+deposit oxide thick=0.002 div=20
+extract name="Oxide1" thickness oxide mat.occno=1 x.val=0.222
+
+deposit nitride thick=0.011 div=30
+extract name="Nitride" thickness nitride mat.occno=1 x.val=0.8
+deposit oxide thick=0.002 div=20
+extract name="Oxide2" thickness oxide mat.occno=1 x.val=0.8
+structure outfile=b10ONO.str
+#tonyplot b10ONO.str
+
+
+depo poly thick=0.08 div=20
+implant phosphor dose=2.5e12 energy=30 pearson
+extract name="Thickness of Control Gate" thickness material="Polysilicon" mat.occno=1 x.val=0.8
+
+structure outfile=b11polycgate.str
+#tonyplot b11polycgate.str
+etch poly left p1.x=0.2195
+etch oxide left p1.x=0.2195
+etch nitride left p1.x=0.2195
+etch oxide left p1.x=0.2195
+etch poly left p1.x=0.2195
+
+#etch poly left p1.x=0.22
+#etch oxide left p1.x=0.22
+#etch nitride left p1.x=0.22
+
+#################################################################
+# A final oxide is grown to protect the device
+depo oxide thick=0.01 divisions=21
+
+##################################################################
+# The step etches away the oxide in specific place to create contact D/S
+etch oxide start x=0.18 y=-0.7
+etch cont x=0.18 y=-0.4
+etch cont x=0.15 y=-0.4
+etch done x=0.15 y=-0.7
+structure outfile=b13lastox.str
+#tonyplot b13lastox.str
+deposit alumin thick=0.016 divisions=13
+etch alumin right p1.x=0.182
+etch alumin left p1.x=0.145
+structure outfile=b14cutds.str
+#tonyplot b14cutds.str
+###############################################################
+structure mirror right
+
+##################################################################
+# The n-type  (drain and source)
+#implant phosphor dose=1e12 energy=30 pearson
+implant arsenic dose=2.450e12 energy=55 pearson
+method fermi compress
+diffuse time=175 temp=1000 nitro press=1.0
+structure outfile=b12insar.str
+#tonyplot b12insar.str
+
+extract name="Length of Floating_Gate" thickness material="Polysilicon" mat.occno=1 y.val=-0.476
+extract name="Length of Control Gate" thickness material="Polysilicon" mat.occno=1 y.val=-0.54
+electrode name=cgate x=0.25 y=-0.54
+electrode name=fgate x=0.247 y=-0.476
+electrode name=source x=0.17
+electrode name=drain x=0.33
+electrode name=substrate backside
+structure outfile=b15amirror.str
+#tonyplot b15amirror.str
+
+###############################################################
+# Switch to Devedit for remeshing...
+####################################################################
+###############################################################
+# Switch to Devedit for remeshing...
+####################################################################
+go devedit simflags="-3D"
+set width=0.1
+init inf=b15amirror.str z1=0 z2=$width
+region reg=1 mat=Silicon z1=0 z2=$width
+region reg=2 mat=SiO2 z1=0 z2=$width
+region reg=3 mat=SiO2 z1=0 z2=$width
+region reg=4 mat=Polysilicon z1=0 z2=$width
+region reg=5 mat=Si3N4 z1=0 z2=$width
+region reg=6 mat=polysilicon z1=0 z2=$width
+
+region reg=7 mat=Aluminum elec.id=1 z1=0 z2=$width
+region reg=8 mat=SiO2 z1=0 z2=$width
+
+
+constr.mesh region=1 default max.height=0.2 max.width=$width
+#
+Mesh Mode=MeshBuild
+z.plane z=0 spacing=0.25
+#
+z.plane z=$width spacing=0.125
+z.plane max.spacing=1000000 max.ratio=1.5
+structure outf=FloatingGateMOS1_3D.str
+#tonyplot3d FloatingGateMOS1_3D.str
+
+#####################################################################
+# Set Meshing Parameters
+#
+base.mesh height=0.4 width=0.4
+#
+# Make sure impurity gradiants have enough detail. (i.e. no triangle
+# spans more than 1 (sensitivity=1) power of 10)
+imp.refine imp="NetDoping" sensitivity=1
+imp.refine min.spacing=0.02
+#
+# Make sure channel has enough triangles.
+constr.mesh depth=0.25 under.material="PolySilicon" max.height=0.05 \
+	    max.width=0.05
+constr.mesh depth=0.05 under.material="PolySilicon" max.height=0.015
+#
+# Make sure contacts have enough connection points.
+constr.mesh depth=0.05 under.material="Aluminum" max.width=0.1
+
+# Create a mesh, using the parameters set above.
+mesh mode=meshbuild
+
+# save structure
+struct outfile=eprmex011_1.str
+#tonyplot3d  eprmex011_1.str
+
+
+go atlas
+
+# Set workfunction for the poly gates,
+contact name=fgate n.poly floating EL1.CAP=cgate FG1.CAP=1e-15
+#CONTACT NAME=fgate FLOATING N.POLY EL1.CAP=cgate FG1.CAP=1e-15
+contact name=cgate n.polysilicon
+
+#Define some Qss...
+interface qf=3e10
+models srh cvt hei fnord print nearflg
+impact selb
+
+######### This is the Vt Test before programming #############
+##############################################################
+solve init
+
+
+method newton trap maxtraps=8 autonr
+
+log outf=eprmex7_1a.log
+solve vdrain=1.0 vsource=0.0
+solve vcgate=0 vstep=0.05 vfinal=2 name=cgate comp=5e-6 cname=drain
+# plot idvg
+log off
+tonyplot eprmex7_1a.log 
+# extract vt
+extract name="initial vt" ((xintercept(maxslope(curve(v."cgate",i."drain"))))-abs(ave(v."drain"))/2.0)
+#log outf=eprmex7_.log
+#extract name="cv" curve(c."cgate""fgate", v."cgate")  
+#solve vcgate=-9 vstep=0.1 vfinal=9 name=cgate ac freq=1e3 previous
+#solve vfgate=0 vstep=0.1 vfinal=5 name=fgate ac freq=1e6 direct
+######### This is the Programming/Writing Transient ###########
+###############################################################
+#tonyplot eprmex7_.log
+# use zero carriers to get vg=12v solution
+models srh cvt hei fnord print nearflg
+method carriers=0
+log off
+solve init
+solve vcgate=1
+solve vcgate=6
+solve vcgate=12
+
+#solve vcgate=9
+#solve vdrain=0.0 vsource=1.0
+# now use 2 carriers
+
+models srh cvt hei fnord print nearflg
+impact selb
+
+method newton trap maxtraps=8 carriers=2
+solve prev
+
+log outf=eprmex1a.log master
+# ramp up drain voltage
+solve vdrain=1 ramptime=1e-15 tstep=1e-15 tfinal=5e-15 proj
+# keep voltages constant and perform transient programming
+method dt.min=1.0e-9
+solve tstop=1.0e-8
+save outf=eprmex1_5.str
+solve tstop=1.0e-7
+method dt.min=1.0e-8
+solve tstop=1e-6
+save outf=eprmex1_6.str
+method dt.min=1.0e-7
+solve tstop=1e-5
+method dt.min=1.0e-6
+solve tstop=3e-4
+method dt.min=1.0e-5
+solve tstop=5e-2
+
+tonyplot eprmex1a.log
+save outf=eprmex1.str
+
+method newton trap maxtraps=8 autonr
+
+log outf=eprmex2a.log master
+solve init
+solve vdrain=1.0 vsource=0.0
+solve vcgate=0 vstep=0.05 vfinal=12 name=cgate comp=5e-7 cname=drain
+
+tonyplot -overlay eprmex2a.log eprmex7_1a.log 
+
+extract name="final vt" ((xintercept(maxslope(curve(v."cgate",i."drain"))))-abs(ave(v."drain"))/2.0)
+extract name="vt shift" ($"final vt" - $"initial vt")
+
+go atlas
+
+# select erasing models9
+#mô hình này dùng để tính mật độ dòng JFN và JFP bằng cách thay đổi hệ số F.BE và F.BH
+  
+models  cvt srh  fnord bbt.std print nearflg \
+          F.BE=6.5e7 F.BH=6.5e7
+impact selb
+
+
+contact name=fgate n.poly floating
+contact name=cgate n.poly
+interface qf=3e10
+
+method carr=2
+# get initial zero carrier solution
+solve init
+
+# ramp the floating gate charge
+
+method newton trap maxtraps=8
+solve vcgate=-1
+solve vcgate=-6
+solve vcgate=-12
+#solve vcgate=-9
+
+solve prev  
+solve   qfgate=-1e-17
+#solve   qfgate=-2e-17
+solve   qfgate=-3e-17
+solve   qfgate=-7e-17 
+solve   qfgate=-2.65e-16
+#solve   qfgate=-1e-15
+#solve   qfgate=-2e-15
+#solve   qfgate=-3.985e-15
+
+
+# put a resistor on drain
+
+contact name=drain resistance=1.e20
+
+# do Erasing transient
+method newton trap maxtraps=8 autonr c.tol=1e-5 p.tol=1e-5
+
+log   outf=eprmex3a.log master
+
+solve vsource=1 vdrain=1 tstep=1e-6 tfinal=7E-2 
+
+
+tonyplot eprmex3a.log
+
+# Test GCR
+
+go atlas
+
+# Set workfunction for the poly gates,
+contact name=fgate n.poly floating EL1.CAP=cgate FG1.CAP=1e-15
+#CONTACT NAME=fgate FLOATING N.POLY EL1.CAP=cgate FG1.CAP=1e-15
+contact name=cgate n.polysilicon
+
+#Define some Qss...
+interface qf=3e10
+models srh cvt hei fnord print nearflg
+impact selb
+
+######### This is the Vt Test before programming #############
+##############################################################
+solve init
+
+
+method newton trap maxtraps=8 autonr
+
+log outf=eprmex7_1e.log
+solve vdrain=1.0 vsource=0.0
+solve vcgate=-18 vstep=1 vfinal=18 name=cgate ac freq=1e6 direct
+# plot idvg
+log off
+tonyplot eprmex7_1e.log 
+# extract vt
